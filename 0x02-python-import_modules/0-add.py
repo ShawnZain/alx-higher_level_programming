@@ -15,4 +15,4 @@ if __name__ = "__main__":
     b = 2
 
     '''print <a value> + <b value> = <add(a, b) value>'''
-    print("{:d} + {:d} = {:d}".format(a, b, add(a,b)))
+    print("{} + {} = {}".format(a, b, add(a,b)))
