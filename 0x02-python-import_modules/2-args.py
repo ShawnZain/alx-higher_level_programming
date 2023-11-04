@@ -2,12 +2,22 @@
 
 import sys
 
-count = len(sys.argv) - 1
-if count == 0:
-    print("0 arguments.")
-elif count == 1:
-    print("1 argument:")
-else:
-    print(f"{count} arguments:".format(count))
-for i in range(count):
-     print("f{i + 1}: {sys.argv}".format(i + 1, sys.argv[i + 1]))
+
+def main():
+    #get the length of arguments passed
+    count = len(sys.argv)
+
+    #test if there are arguments passed
+    if count == 1:
+        print("0 arguments.")
+    else:
+        #print the number of arguments passed
+        print(f"{count - 1} arguments:")
+
+        #iterate through the arguments and print each one
+        for i, arg in enumerate(sys.argv[1:], start=1):
+            print(f"{i}: {arg}")
+
+
+if __name__ == "__main__":
+    main()
