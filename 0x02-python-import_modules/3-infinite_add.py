@@ -17,5 +17,5 @@ if __name__ == "__main__":
     print(f"{prompt} {arguments}")
 
 arguments = sys.argv[1:]  # Exclude the script name from the arguments list
-    total = sum(int(arg) for arg in arguments)
-    print(total)
+total = sum(int(arg) for arg in arguments)
+print(total)
