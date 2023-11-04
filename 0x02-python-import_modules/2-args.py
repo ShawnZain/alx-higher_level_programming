@@ -15,7 +15,7 @@ def main():
         print(f"{count - 1} arguments:")
 
         #iterate through the arguments and print each one
-        for i, arg in enumerate(sys.argv[1:], start=1):
+        for i, arg in enumerate(sys.argv[1:], start = 1):
             print(f"{i}: {arg}")
 
 
