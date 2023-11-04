@@ -4,7 +4,12 @@ import sys
 
 
 def main():
-    #get the length of arguments passed
+    """Program that handles command line arguments
+    It will get the number of arguments passed to it,
+    minus argv[0] which is the script name.
+    Then print out all the arguments, each in its
+    own line
+    """
     count = len(sys.argv)
 
     #test if there are arguments passed
