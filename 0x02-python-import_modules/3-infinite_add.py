@@ -20,7 +20,15 @@ def main():
 
     else:
         for i, arg in enumerate(sys.argv[1:]):
-            sum += int(arg)
+            try:
+                sum += int(arg)
+            except ValueError:
+                """Handling value error when user passes
+                an argument that is not a number
+                """
+                print(f"Invalid argument at position {i + 1},"
+                        f" '{arg}' is not a valid number")
+                return
 
     print(f"{sum}")
 
