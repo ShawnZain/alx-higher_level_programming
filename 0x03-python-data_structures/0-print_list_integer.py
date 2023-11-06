@@ -6,5 +6,5 @@ def print_list_integer(myList=[]):
 
     myList: the list whose integers we print
     """
-    for i in range(len(myList)):
-        print(myList[i])
+    for item in myList:
+        print(item)
