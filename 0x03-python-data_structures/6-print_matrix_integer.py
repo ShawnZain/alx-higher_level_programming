@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def print_matrix_integer(matrix):
+def print_matrix_integer(matrix[[]]):
     """provided an input list
     print out the list ina matrix of integers
     The matrix will basically be same as the list
