@@ -8,9 +8,7 @@ def element_at(my_list, idx):
     my_list: list to retrieve value from
     idx: index that we are looking for
     """
-    list_len = len(my_list)
-
-    if (idx > list_len) or (idx < 0):
+    if (0 > idx) or (idx >= len(my_list)):
         return None
     else:
         return my_list[idx]
