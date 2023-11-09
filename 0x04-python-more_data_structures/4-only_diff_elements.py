@@ -11,6 +11,7 @@ def only_diff_elements(set_1, set_2):
     """
 
 
-    unique_set = set(set_1 ^ set_2)
-
-    return unique_set
+    unique_to_set1 = set_1 - set_2
+    unique_to_set2 = set_2 - set_1
+    
+    return unique_set1.union(unique_to_set2)
