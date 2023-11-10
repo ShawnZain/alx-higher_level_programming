@@ -22,7 +22,7 @@
 
 int check_cycle(listint_t *list)
 {
-	lintint_t *slow = list;
+	listint_t *slow = list;
 	listint_t *fast = list;
 
 	while (fast != NULL && fast->next != NULL)
@@ -32,14 +32,10 @@ int check_cycle(listint_t *list)
 
 		if (fast == slow)
 		{
-			free(slow);
-			free(fast);
 			return 1;
 		}
 
 	}
 	
-	free(slow);
-	free(fast);
 	return 0;
 }
