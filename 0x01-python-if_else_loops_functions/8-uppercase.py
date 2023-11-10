@@ -17,6 +17,6 @@ def uppercase(str):
         if 97 <= ord(chars) <= 122: # lowercase is from 97 to 122
             chars = chr(ord(chars) - 32) #get the uppercase then cast to char
 
-        print(f"{chars}", end="")
+        print("{}".format(chars), end="")
 
     print()
