@@ -17,9 +17,9 @@ def safe_print_list(my_list=[], x=0):
         for i in range(x):
             print(my_list[i], end = "")
             count += 1
-    except Exception:
+    except (IndexError, ValueError, TypeError):
         """IndexError occurs when the list does not have enough elements
-        ValueError occurs when x is not an int
+        ValueError & TypeError occurs when x is not an int
         """
         pass
     finally:
