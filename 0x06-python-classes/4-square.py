@@ -49,10 +49,12 @@ class Square:
 
         return (self.__size * self.__size)
 
+    @property
     def size(self):
-        """Retrieves the size of the square"""
+        """Retrieves (gets) the size of the square"""
         return self.__size
 
+    @size.setter
     def size(self, value):
         """Sets a new value for size
         The new value for size should meet the same criteria as when initializing it:
