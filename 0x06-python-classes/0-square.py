@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
+""" Square class """
 
-# Square class
 
 class Square:
-    #nothing in here at the moment
+    """ creating an empty class """
     pass
