@@ -72,7 +72,7 @@ class Square:
         if size == 0, print out a blank line
         """
 
-        if size == 0:
+        if self.__size == 0:
             print("")
 
         for length in range(0, self.__size):
