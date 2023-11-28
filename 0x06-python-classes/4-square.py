@@ -58,19 +58,8 @@ class Square:
     def size(self, value):
         """Sets a new value for size
         The new value for size should meet the same criteria as when initializing it:
-
-        It must be an integer
-        >>>another_square(2)
-        >>>another_square.size('i')
-        Traceback (most recent call last):
-        ...
-        TypeError: 'size must be an integer'
-
-        Size should always be greater than 0
-        >>>b_square = Square(-1)
-        Traceback (most recent call last):
-        ...
-        ValueError: 'size must be >= 0'
+            It must be an integer
+            Size should always be greater than 0
 
         Correct initlialization of the instance
         >>>c_square = Square(2)
