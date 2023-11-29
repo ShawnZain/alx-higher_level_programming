@@ -71,22 +71,23 @@ class Square:
 
     def my_print(self):
         """Prints out the square with #s
+            position[1] reprensents how many new lines before printing the square
+            position[0] represents how many spaces before printing #
             The length and width of the square is 'size'
-            Before the '#', print spaces according to position[0]
             if size == 0, print out a blank line
         """
 
         if self.__size == 0:
             print("")
 
+        for new_line in range(0, self.__position[1]):
+            print("")
+
         for length in range(0, self.__size):
-            #spaces come first
             for space in range(0, self.__position[0]):
                 print(" ", end = "")
 
-            #then the # sign
             for width in range(0, self.__size):
                 print("#", end = "")
 
-            #add a new line at the end of width
             print("")
